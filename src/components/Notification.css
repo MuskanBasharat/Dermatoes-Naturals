@@ -1,0 +1,64 @@
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(17, 16, 16);
+  text-align: center;
+  box-shadow: 4px 4px 0 gray;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  animation: fadeIn 0.3s, fadeOut 0.3s 2.7s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 90%;
+  min-width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.notification-message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  font-size: 0.95rem;
+}
+
+.notification-success {
+  background-color: #f8f9f8; /* Green for general success */
+}
+.notification-info {
+  background-color: #00BCD4; /* Cyan for info */
+}
+
+.notification-error {
+  background-color: #F44336; /* Red for errors */
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.notification-close:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; top: 0; transform: translateX(-50%) scale(0.95); }
+  to { opacity: 1; top: 20px; transform: translateX(-50%) scale(1); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; top: 20px; transform: translateX(-50%) scale(1); }
+  to { opacity: 0; top: 0; transform: translateX(-50%) scale(0.95); }
+}

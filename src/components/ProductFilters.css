@@ -1,0 +1,123 @@
+
+.product-filters {
+  padding: 20px 0;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+
+
+.main-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-button {
+  border: none;
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 500;
+  font-size: 13px;
+  white-space: nowrap;
+  width:90px;
+  height: 40px;
+  text-align: center;
+}
+
+.filter-button.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.sub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  gap: 5px;
+  justify-content: center;
+}
+
+.sub-filter-button {
+  padding: 3px 3px;
+  font-size: 13px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  width: 90px;
+  height: 30px;
+  border: none;
+}
+
+.sub-filter-button:hover,
+.sub-filter-button.active {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+@media (max-width:576px) 
+{
+
+     .filters-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  .main-filters,
+  .sub-filters {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    width: max-content;
+    min-width: 100%;
+  }
+
+  .main-filters::-webkit-scrollbar,
+  .sub-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-button{
+    flex: 0 0 auto;
+    white-space: nowrap;
+    width: 100px;
+    height: 35px;
+  }
+  .sub-filter-button {
+    width: 80px;
+    height: 30px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sub-filters {
+    position: static;
+    box-shadow: none;
+    padding: 10px 0;
+  }
+  
+  .filter-group:hover .sub-filters {
+    display: none;
+  }
+  
+  .filter-group.active .sub-filters {
+    display: block;
+  }
+  
+}

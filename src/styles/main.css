@@ -1,0 +1,97 @@
+:root {
+  --secondary-color: #48c14c; 
+  --primary-color: #1f61a3; 
+  --primary1-color: #316ca7;
+  --accent-color: #FFC107;
+  --text-color: #333;
+  --light-text: #777;
+  --background-color: #f9f9f9;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #757575;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: auto !important;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+
+.container {
+  width: 100%;
+  padding: 0 40px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  color: var(--secondary-color);
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.ghost-button {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 500;
+    border-radius: 12px;
+   border: 1px;
+  transition: var(--transition);
+    background-color: var(--light-gray);
+
+}
+
+.ghost-button:hover {
+  background-color: var(--primary-color);
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+/* Ensure proper layout structure */
+main {
+  min-height: calc(100vh - 150px);
+}
+
+.product-detail-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
