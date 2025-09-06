@@ -63,7 +63,7 @@ useEffect(() => {
               {navItems.map((item, index) => (
                 <li key={index}>
                   <NavLink 
-                    to={item.section === 'home' ? '/' : `#${item.section}`}
+                    to={item.section === 'home'|| 'about' || 'shop' || 'custom-order-button' ? '/' : `#${item.section}`}
                     className="nav-link"
                     onClick={() => {
                       if (item.section === 'home') {

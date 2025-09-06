@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px; /* Increased gap for better spacing */
   margin-bottom: 30px;
 }
 
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* Changed from hidden to visible for tooltip */
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 1;
@@ -51,18 +51,19 @@
 
 .social-tooltip {
   position: absolute;
-  bottom: -30px;
+  bottom: -40px; /* Adjusted position */
   left: 50%;
   transform: translateX(-50%);
   background: #333;
   color: white;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 4px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   opacity: 0;
   transition: all 0.3s ease;
   white-space: nowrap;
-  z-index: 3;
+  z-index: 10; /* Higher z-index to ensure visibility */
+  pointer-events: none; /* Prevents tooltip from blocking clicks */
 }
 
 .social-tooltip::before {
@@ -85,6 +86,7 @@
   transform: scale(0);
   opacity: 1;
   transition: transform 0.5s ease, opacity 1s ease;
+  z-index: 0;
 }
 
 /* Hover Effects */
@@ -99,7 +101,7 @@
 
 .social-icon:hover .social-tooltip {
   opacity: 1;
-  bottom: -40px;
+  bottom: -45px; /* Adjusted position */
 }
 
 .social-icon:hover .social-wave {
@@ -116,38 +118,18 @@
   background: #3b5998;
 }
 
-.twitter {
-  background: #1DA1F2;
-}
 
-.pinterest {
-  background: #E60023;
-}
 
 .tiktok {
   background: #000000;
   position: relative;
-  overflow: hidden;
 }
 
-.tiktok::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, 
-    transparent, 
-    rgba(255, 0, 80, 0.5), 
-    rgba(0, 242, 234, 0.5), 
-    transparent);
-  transition: all 0.6s ease;
-}
 
 .tiktok:hover::before {
   left: 100%;
-}
+} 
+
 
 .youtube {
   background: #FF0000;
@@ -162,7 +144,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .social-grid {
-    gap: 10px;
+    gap: 20px;
   }
   
   .social-icon {
@@ -177,11 +159,21 @@
   .footer-tagline {
     font-size: 1.3rem;
   }
+
+  .social-tooltip {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    bottom: -35px;
+  }
+  
+  .social-icon:hover .social-tooltip {
+    bottom: -40px;
+  }
 }
 
 @media (max-width: 480px) {
   .social-grid {
-    gap: 8px;
+    gap: 15px;
   }
   
   .social-icon {
@@ -199,6 +191,12 @@
   }
   
   .social-tooltip {
-    display: none;
+    display: block; /* Changed from none to block */
+    font-size: 0.6rem;
+    bottom: -30px;
+  }
+  
+  .social-icon:hover .social-tooltip {
+    bottom: -35px;
   }
 }

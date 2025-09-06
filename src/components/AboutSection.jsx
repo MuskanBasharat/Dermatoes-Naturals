@@ -1,8 +1,7 @@
-import React from 'react';
 import './AboutSection.css'
 function AboutSection() {
   return (
-    <section id="about" className="about-section">
+    <section  className="about-section" id="about">
       <div className="container">
         <h2 className="section-title">About Dermatoes Naturals</h2>
         <div className="about-content">
@@ -27,11 +26,11 @@ function AboutSection() {
             </p>
             <div className="founder-signature">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkzb2dq7WGe2ClEsjfc8L-yWGZyo_k6VzG6w&s" alt="Dr. Anjali Kapoor" />
-              <p>Dr. Anjali Kapoor<br />Founder & CEO</p>
+              <p>Dr. Saqlain Ali<br />Founder & CEO</p>
             </div>
-           <a href="https://wa.me/923026673345?text=Hey!%20I%20want%20to%20customize%20an%20order" target="_blank" 
+           <a href="https://wa.me/923026673345?text=Hey%20Dermatoes%20Naturals%20I%20want%20a%20Consultation" target="_blank" 
         rel="noopener noreferrer"> <button className='vibrate-btn'>Free Consultation</button></a>
-         <a href="https://wa.me/923026673345" target="_blank" 
+         <a href="https://wa.me/923026673345?text=Hey%20Dermatoes%20Naturals%20I%20want%20to%20customize%20an%20order" target="_blank" 
         rel="noopener noreferrer"> <button className='vibrate-btn' id="custom-order-button">Customized Order</button></a>
           </div>
         </div>

@@ -46,17 +46,25 @@
   z-index: 999;
 }
 
-.badge.new {
-  background-color: #4CAF50;
-}
 
 .badge.bestseller {
-  background-color: #fe2cd7;
-  
+  background-color: #FFEB3B;
+  color: #333;
+    margin: 10px 0px 0px 10px;
+
 }
 
+
 .badge.sale {
-  background-color: #f44336;
+  margin: 10px 10px 0px 0px;
+  background:#fe2c44 ;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+ position: absolute;
+ right: 0;
 }
 
 /* ===== Product Image ===== */
@@ -191,33 +199,24 @@
 
 
 .product-price {
-  margin: 12px 0;
   display: flex;
+  margin: 12px 0;
   align-items: center;
   gap: 8px;
-  flex-wrap: wrap;
 }
 
 .original-price {
   text-decoration: line-through;
   color: #f60505;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .current-price {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   color: #333;
 }
 
-.discount {
-  background: #FFEB3B;
-  color: #333;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 600;
-}
 
 /* ===== Buttons ===== */
 .add-to-cart {
@@ -257,6 +256,7 @@
 .containers {
   margin: auto;
 }
+
 @media (max-width: 576px) {
   .containers {
     padding: 0;
@@ -266,11 +266,7 @@
 
 /* === Mobile First (no gap + full image size) === */
 @media (max-width: 480px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding: 0;
-  }
+  
 
   .product-card {
     border-radius: 0;
@@ -282,6 +278,10 @@
     aspect-ratio: 1 / 1;
     max-height: none;
   }
+  .product-card.square-image .product-image img {
+  height: 215px;
+
+  }
 
   .product-details {
     padding: 1rem;
@@ -292,15 +292,17 @@
   }
 
   .product-price {
-    font-size: 0.95rem;
+    font-size: 18px;
+    display: flex;
+    margin: 3px;
   }
 
   .original-price {
-    font-size: 0.85rem;
+    font-size: 14px;
   }
 
   .discount {
-    font-size: 0.75rem;
+    font-size: 14px;
     padding: 2px 6px;
   }
 
@@ -314,17 +316,24 @@
 /* === Tablets === */
 @media (max-width: 768px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2px;
+    padding: 2px;
   }
+  
   .product-image img{
     height: 270px;
   }
+  .product-card.square-image .product-image {
+    height: 250px;
+      display: grid;
+
+  }
   .product-card.square-image .product-image img {
   object-fit: contain;
-  height: 260px;
+  height: 213px;
 }
+
 }
 
 /* === Small Laptops === */

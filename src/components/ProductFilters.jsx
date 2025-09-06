@@ -7,18 +7,23 @@ function ProductFilters({ activeFilter, setActiveFilter }) {
   const categories = [
     {
       name: 'Skin Care',
-      id: 'skin-care',
-      subCategories: ['Serum', 'Sunscreen', 'Face Wash', 'Moisturizer'],
+      id: 'skin care',
+      subCategories: ['Serum', 'Sunscreen', 'Face Wash', 'Moisturizer', 'Toner', 'Cream', 'Scrub'],
     },
     {
       name: 'Body Care',
-      id: 'body-care',
-      subCategories: ['Cream', 'Butter', 'Scrub', 'Body Lotion'],
+      id: 'body care',
+      subCategories: ['Cream', 'Mist', 'Body Lotion', 'Body Wash', "Handwash"],
+    },
+    {
+      name: 'Hair Care',
+      id: 'hair care',
+      subCategories: ['Shampoo','Hair Oil', 'Hair toner', "Hair Serum"],
     },
     {
       name: 'Offers',
       id: 'offers',
-      subCategories: ['Best Seller', 'New', 'Sale'],
+      subCategories: ['Best Seller', 'Sale'],
       isStickerBased: true
     },
   ];

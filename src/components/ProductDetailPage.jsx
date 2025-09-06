@@ -22,12 +22,21 @@ function ProductDetailPage({ addToCart, wishlist, setWishlist, setNotification }
     }
   }, [productId]);
 
-  const handleWhatsAppOrder = () => {
-    if (!product) return;
-    const message = `I'd like to order ${quantity} ${product.name}. Product URL: ${window.location.href}`;
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
+const handleWhatsAppOrder = () => {
+  if (!product) return;
+
+  const phoneNumber = "+923026673345"; 
+  const message = 
+   `*Hey Dermatoes Naturals* \n\n` +
+    `*New Order Details* \n\n` +
+    `*Product:* ${product.name}\n` +
+    `*Quantity:* ${quantity}\n` +
+    `Please confirm my order. `;
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(whatsappUrl, "_blank");
+};
 const toggleWishlist = () => {
   if (!product) return;
   const isWishlisted = wishlist.includes(product.id);
@@ -74,15 +83,7 @@ const toggleWishlist = () => {
 
         <div className="product-detail-grid">
           <div className="product-gallery-section" >
-            {product.sticker && (
-              <div className={`product-sticker ${
-                product.sticker.toLowerCase().includes('sale') ? 'sale' : 
-                product.sticker.toLowerCase().includes('new') ? 'new' : 
-                'best-seller'
-              }`}>
-                {product.sticker.toUpperCase()}
-              </div>
-            )}
+           
             <div className={`main-image ${product.isSquare ? 'square-image' : ''}`} style={{ background: product.background || '#fff' }}>
               <img 
                 src={selectedImage} 
@@ -117,8 +118,9 @@ const toggleWishlist = () => {
             <div className="product-header">
               <h1>{product.name}</h1>
               <div className="product-subheader">
-                <span className="category-badge">{product.category}</span>
-                <span className="subcategory-badge">{product.subCategory}</span>
+                <span className="category-badge" style={{ background: product.background || '#fff' }}>{product.category[0]}</span>
+                <span className="subcategory-badge" style={{ background: product.background || '#fff' }}>{product.subCategory}</span>
+                
               </div>
             </div>
 
@@ -197,7 +199,7 @@ const toggleWishlist = () => {
             <div className="section">
               <h2>Key Ingredients</h2>
               <ul className="ingredients-list">
-                {product.ingredients?.split(', ').map((ingredient, i) => (
+                {product.keyIngredients?.split(', ').map((ingredient, i) => (
                   <li key={i}>{ingredient}</li>
                 ))}
               </ul>
@@ -207,7 +209,10 @@ const toggleWishlist = () => {
               <h2>How To Use</h2>
               <p>{product.usage}</p>
             </div>
-
+          <div className="section">
+              <h2>Ingredeints</h2>
+              <p>{product.ingredients}</p>
+            </div>
             
           </div>
         </div>

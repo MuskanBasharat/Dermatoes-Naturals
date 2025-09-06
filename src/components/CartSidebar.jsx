@@ -1,5 +1,6 @@
 import React from 'react';
-import './CartSidebar.css'
+import './CartSidebar.css';
+
 function CartSidebar({ isOpen, onClose, cartItems, onUpdateQuantity, onRemoveItem, onOrderClick }) {
   const totalAmount = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 

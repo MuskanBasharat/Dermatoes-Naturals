@@ -30,7 +30,7 @@ function ProductsSection({
 
   const displayCategories = (product) => {
     if (Array.isArray(product.category)) {
-      return product.category.join(', ');
+      return product.category[0];
     }
     return product.category || '';
   };
@@ -76,13 +76,20 @@ function ProductsSection({
             {filteredProducts.map(product => (
               <div key={product.id} 
                    className={`product-card ${product.isSquare ? 'square-image' : ''}`}>
-                <div className="product-badges">
-                  {(product.sticker === 'Sale') && <span className="badge sale">SALE</span>}
-                  {(product.sticker === "Best Seller") && <span className="badge bestseller">BESTSELLER</span>}
-                  {(product.sticker === "New") && <span className="badge new">NEW</span>}
-                </div>
-      
-                <Link 
+<div className="product-badges">
+  {product.sticker === 'Sale' && (
+    <span className="badge sale">
+      {product.oldPrice && (
+        <span>
+          {Math.round((1 - product.price/product.oldPrice) * 100)}% OFF
+        </span>
+      )}
+    </span>
+  )}
+  
+  {product.sticker === "Best Seller" && <span className="badge bestseller">BESTSELLER</span>}
+</div>
+        <Link 
                   to={`/product-detail/${product.id}`}
                   className="product-image" 
                   style={{ background: product.background || '#fff' }}
@@ -119,11 +126,7 @@ function ProductsSection({
                       <span className="original-price">Rs.{product.oldPrice}</span>
                     )}
                     <span className="current-price">Rs.{product.price}</span>
-                    {product.oldPrice && (
-                      <span className="discount">
-                        {Math.round((1 - product.price/product.oldPrice) * 100)}% OFF
-                    </span>
-                    )}
+                    
                   </div>
                   <button 
                     className="add-to-cart" 

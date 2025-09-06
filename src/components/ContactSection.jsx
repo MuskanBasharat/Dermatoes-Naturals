@@ -1,9 +1,6 @@
-import React from 'react';
 import { 
   FaInstagram, 
   FaFacebookF, 
-  FaTwitter, 
-  FaPinterestP,
   FaTiktok,
   FaYoutube
 } from 'react-icons/fa';
@@ -20,7 +17,7 @@ const ContactSection = () => {
         <div className="social-grid">
           {/* Instagram */}
           <a 
-            href="https://instagram.com/dermatoes" 
+            href="https://www.instagram.com/dermatoesnaturals/" 
             className="social-icon instagram"
             aria-label="Instagram"
             target="_blank"
@@ -33,7 +30,7 @@ const ContactSection = () => {
           
           {/* Facebook */}
           <a 
-            href="https://facebook.com/dermatoes" 
+            href="https://www.facebook.com/profile.php?id=61563567328835" 
             className="social-icon facebook"
             aria-label="Facebook"
             target="_blank"
@@ -43,49 +40,26 @@ const ContactSection = () => {
             <span className="social-tooltip">Like on Facebook</span>
             <div className="social-wave"></div>
           </a>
-          
-          {/* Twitter */}
-          <a 
-            href="https://twitter.com/dermatoes" 
-            className="social-icon twitter"
-            aria-label="Twitter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter className="social-svg" />
-            <span className="social-tooltip">Follow on Twitter</span>
-            <div className="social-wave"></div>
-          </a>
-          
-          {/* Pinterest */}
-          <a 
-            href="https://pinterest.com/dermatoes" 
-            className="social-icon pinterest"
-            aria-label="Pinterest"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaPinterestP className="social-svg" />
-            <span className="social-tooltip">Pin on Pinterest</span>
-            <div className="social-wave"></div>
-          </a>
+         
           
           {/* TikTok */}
-          <a 
-            href="https://tiktok.com/@dermatoes" 
-            className="social-icon tiktok"
-            aria-label="TikTok"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTiktok className="social-svg" />
-            <span className="social-tooltip">Follow on TikTok</span>
-            <div className="social-wave"></div>
-          </a>
+         <a 
+  href="/" 
+  className="social-icon tiktok"
+  aria-label="TikTok"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div className="tiktok-icon-container">
+    <FaTiktok className="social-svg" />
+  </div>
+  <span className="social-tooltip">Follow on TikTok</span>
+  <div className="social-wave"></div>
+</a>
           
           {/* YouTube */}
           <a 
-            href="https://youtube.com/dermatoes" 
+            href="/" 
             className="social-icon youtube"
             aria-label="YouTube"
             target="_blank"

@@ -12,33 +12,7 @@
 }
 
 
-.product-sticker {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  z-index: 10;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
 
-.product-sticker.sale {
-  background-color: #f44336;
-}
-
-.product-sticker.new {
-  background-color: #4CAF50;
-}
-
-.product-sticker.best-seller {
-  background-color: #FF9800;
-}
 .product-detail-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -142,17 +116,9 @@
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
+  color: #161010;
 }
 
-.category-badge {
-  background-color: rgba(31, 97, 163, 0.1);
-  color: #1f61a3;
-}
-
-.subcategory-badge {
-  background-color: rgba(76, 175, 80, 0.1);
-  color: #4CAF50;
-}
 
 .price-section {
   margin-bottom: 1.5rem;
@@ -181,8 +147,8 @@
 }
 
 .discount-badge {
-  background-color: #FFEB3B;
-  color: #333;
+  background-color: #fe2c44 ;
+  color: white;
   padding: 0.2rem 0.8rem;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -398,6 +364,9 @@
 @media (max-width:768px) {
     .product-detail-page {
     margin-top: 80px;
+  }
+  .original-price {
+    font-size: 12px;
   }
   
 }

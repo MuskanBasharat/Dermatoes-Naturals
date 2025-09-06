@@ -41,37 +41,36 @@ function MainContent() {
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
   }, [wishlist]);
 
-  useEffect(() => {
-    const filterProducts = () => {
-      if (!activeFilter || activeFilter.type === 'all') {
+useEffect(() => {
+  const filterProducts = () => {
+    if (!activeFilter || activeFilter.type === 'all') {
+      return productsData;
+    }
+
+    switch (activeFilter.type) {
+      case 'category':
+        return productsData.filter(product => 
+          product.category?.includes(activeFilter.value)
+        );
+      
+      case 'subcategory':
+        return productsData.filter(product => 
+          product.category?.includes(activeFilter.category) && 
+          product.subCategory?.includes(activeFilter.value)
+        );
+      
+      case 'sticker':
+        return productsData.filter(product => 
+          product.sticker === activeFilter.value
+        );
+      
+      default:
         return productsData;
-      }
+    }
+  };
 
-      switch (activeFilter.type) {
-        case 'category':
-          return productsData.filter(product => 
-            product.category?.includes(activeFilter.value)
-          );
-        
-        case 'subcategory':
-          return productsData.filter(product => 
-            product.category?.includes(activeFilter.category) && 
-            product.subCategory?.includes(activeFilter.value)
-          );
-        
-        case 'sticker':
-          return productsData.filter(product => 
-            product.sticker === activeFilter.value
-          );
-        
-        default:
-          return productsData;
-      }
-    };
-
-    setFilteredProducts(filterProducts());
-  }, [activeFilter]);
-
+  setFilteredProducts(filterProducts());
+}, [activeFilter]);
   const addToCart = (product) => {
     setCartItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === product.id);
@@ -106,9 +105,16 @@ function MainContent() {
   };
 
   const handleOrderSubmit = (formData) => {
-    const message = `Name: ${formData.name}\nPhone: ${formData.phone}\nAddress: ${formData.address}\n\nOrder Details:\n${cartItems.map(item => 
-      `${item.name} x ${item.quantity} - Rs.${item.price * item.quantity}`
-    ).join('\n')}\n\nTotal: Rs.${cartItems.reduce((total, item) => total + (item.price * item.quantity), 0)}`;
+     const message = 
+    `Hey *Dermatoes Naturals* ,\n\n` +
+    `I’d like to place an order. Here are my details:\n\n` +
+    `*Name:* ${formData.name}\n` +
+    `*Phone:* ${formData.phone}\n` +
+    `*Address:* ${formData.address}\n\n` +
+    `*Order Items:*\n${cartItems.map(item => 
+      `- *Product Name*: ${item.name} *Quantity*: ${item.quantity}`
+    ).join('\n')}\n\n` +
+    `Please confirm my order `;
     
     const whatsappUrl = `https://wa.me/923026673345?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -147,7 +153,7 @@ function MainContent() {
               <HeroCarousel />
               <ProductFilters activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
               <ProductsSection 
-                products={filteredProducts}
+                products={productsData}
                 activeFilter={activeFilter}
                 addToCart={addToCart}
                 wishlist={wishlist}
