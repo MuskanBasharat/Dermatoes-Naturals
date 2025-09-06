@@ -28,7 +28,7 @@ function MainContent() {
   const [showCart, setShowCart] = useState(false);
   const [showOrderForm, setShowOrderForm] = useState(false);
   const [activeFilter, setActiveFilter] = useState({ type: 'all' });
-  const [filteredProducts, setFilteredProducts] = useState(productsData);
+  const [, setFilteredProducts] = useState(productsData);
   const [notification, setNotification] = useState(null);
 
   // Save cart items to localStorage whenever they change
