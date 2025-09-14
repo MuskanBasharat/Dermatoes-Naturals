@@ -50,9 +50,11 @@ function CartSidebar({ isOpen, onClose, cartItems, onUpdateQuantity, onRemoveIte
       
       {cartItems.length > 0 && (
         <div className="cart-footer">
+          <p>Delivery Charges: Rs.300</p>
           <div className="cart-total">
+            
             <span>Total:</span>
-            <span>Rs.{totalAmount}</span>
+            <span>Rs.{totalAmount+300}</span>
           </div>
           <button className="order-button" onClick={onOrderClick}>
             Proceed to Order

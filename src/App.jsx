@@ -114,6 +114,8 @@ useEffect(() => {
     `*Order Items:*\n${cartItems.map(item => 
       `- *Product Name*: ${item.name} *Quantity*: ${item.quantity}`
     ).join('\n')}\n\n` +
+    `Delivery Charges: Rs.300\n\n` +
+
     `Please confirm my order `;
     
     const whatsappUrl = `https://wa.me/923026673345?text=${encodeURIComponent(message)}`;
