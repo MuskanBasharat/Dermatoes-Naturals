@@ -43,32 +43,26 @@ const ContactSection = () => {
          
           
           {/* TikTok */}
-         <a 
-  href="/" 
+         <div
+
   className="social-icon tiktok"
-  aria-label="TikTok"
-  target="_blank"
-  rel="noopener noreferrer"
+ 
 >
   <div className="tiktok-icon-container">
     <FaTiktok className="social-svg" />
   </div>
   <span className="social-tooltip">Follow on TikTok</span>
   <div className="social-wave"></div>
-</a>
+</div>
           
           {/* YouTube */}
-          <a 
-            href="/" 
+          <div
             className="social-icon youtube"
-            aria-label="YouTube"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <FaYoutube className="social-svg" />
             <span className="social-tooltip">Subscribe on YouTube</span>
             <div className="social-wave"></div>
-          </a>
+          </div>
         </div>
         
         <p className="copyright">

@@ -11,35 +11,35 @@ function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: 'Priya Sharma',
+      name: 'Sana ',
       gender: 'female',
       rating: 5,
       comment: 'The face wash is so gentle yet effective. My skin has never felt better!',
-      avatar: 'https://randomuser.me/api/portraits/women/68.jpg',
+      avatar: 'https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/girl.png',
     },
     {
       id: 2,
-      name: 'Rahul Verma',
+      name: 'Ali',
       gender: 'male',
       rating: 4,
       comment: 'The hair oil reduced my hair fall significantly within just 2 weeks of use.',
-      avatar: 'https://randomuser.me/api/portraits/men/45.jpg',
+      avatar: 'https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/boy.png',
     },
     {
       id: 3,
-      name: 'Ananya Patel',
+      name: 'Ayesha',
       gender: 'female',
       rating: 5,
       comment: 'Love the natural ingredients. No side effects and visible results!',
-      avatar: 'https://randomuser.me/api/portraits/women/60.jpg',
+      avatar: 'https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/girl.png',
     },
     {
       id: 4,
-      name: 'Vikram Singh',
+      name: 'Hassan',
       gender: 'male',
       rating: 5,
       comment: 'Best skincare products I have ever used. Worth every penny!',
-      avatar: 'https://randomuser.me/api/portraits/men/22.jpg',
+      avatar: 'https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/boy.png',
     },
   ];
 

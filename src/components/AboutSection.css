@@ -47,6 +47,17 @@
 a{
   text-decoration: none;
 }
+.intro-text{
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 500;
+  word-spacing: 1px;
+  padding: 0 10px;
+}
  .vibrate-btn {
             position: relative;
             padding: 15px 30px;
@@ -124,5 +135,7 @@ a{
   .about-image {
     order: -1;
   }
-  
+  .about-text{
+    padding: 0 20px;
+  }
 }
