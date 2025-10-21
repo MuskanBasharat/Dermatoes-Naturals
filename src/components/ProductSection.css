@@ -257,7 +257,7 @@
   margin: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .containers {
     padding: 0;
   }
@@ -312,7 +312,12 @@
     padding: 0.6rem;
   }
 }
-
+@media (max-width:850px) {
+   .products-grid {
+    gap: 10px;
+  }
+  
+}
 /* === Tablets === */
 @media (max-width: 768px) {
   .products-grid {
@@ -334,6 +339,18 @@
   height: 213px;
 }
 
+}
+@media (max-width:450px) {
+    .product-card.square-image .product-image img {
+  object-fit: contain;
+  height: 190px;
+  width: 150px;
+}
+.product-card.square-image .product-image {
+    height: 190px;
+      display: grid;
+
+  }
 }
 
 /* === Small Laptops === */
