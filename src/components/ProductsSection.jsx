@@ -74,31 +74,34 @@ function ProductsSection({
         ) : (
           <div className="products-grid">
             {filteredProducts.map(product => (
-              <div key={product.id} 
-                   className={`product-card ${product.isSquare ? 'square-image' : ''}`}>
-<div className="product-badges">
-  {product.sticker === 'Sale' && (
-    <span className="badge sale">
-      {product.oldPrice && (
-        <span>
-          {Math.round((1 - product.price/product.oldPrice) * 100)}% OFF
-        </span>
-      )}
-    </span>
-  )}
+            <div key={product.id} className={`product-card ${product.isSquare ? 'square-image' : ''}`}>
+  <div className="product-badges">
+    {product.sticker === 'Sale' && (
+      <span className="badge sale">
+        {product.oldPrice && (
+          <span>
+            {Math.round((1 - product.price/product.oldPrice) * 100)}% OFF
+          </span>
+        )}
+      </span>
+    )}
+    
+    {product.sticker === "Best Seller" && <span className="badge bestseller">BESTSELLER</span>}
+  </div>
   
-  {product.sticker === "Best Seller" && <span className="badge bestseller">BESTSELLER</span>}
-</div>
-        <Link 
-                  to={`/product-detail/${product.id}`}
-                  className="product-image" 
-                  style={{ background: product.background || '#fff' }}
-                >
-                  <img src={product.image} alt={product.name} loading="lazy" />
-                  <div className="product-overlay">
-                    <span className="quick-view">Quick View</span>
-                  </div>
-                </Link>
+  {/* NEW: Added product-image-container wrapper */}
+  <Link 
+    to={`/product-detail/${product.id}`}
+    className="product-image-container" 
+    style={{ background: product.background || '#fff' }}
+  >
+    <div className="product-image">
+      <img src={product.image} alt={product.name} loading="lazy" />
+      <div className="product-overlay">
+        <span className="quick-view">Quick View</span>
+      </div>
+    </div>
+  </Link>
                 
                 <div className="product-details">
                   <div className="product-meta">
@@ -125,7 +128,7 @@ function ProductsSection({
                     {product.oldPrice && (
                       <span className="original-price">Rs.{product.oldPrice}</span>
                     )}
-                    <span className="current-price">Rs.{product.price}</span>
+                    <span className="current-price2">Rs.{product.price}</span>
                     
                   </div>
                   <button 
