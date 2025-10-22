@@ -44,20 +44,21 @@
     "ingredients": "Niacinamide, hyaluronic acid, carboxy methyl cellulose, Glycerol, polyethylene glycol, stabilizers, Preservatives, buffers ..etc",
     "usage": "To get the most out of Dermatoes Naturals Niacinamide Serum, apply a few drops to your face and neck after cleansing and toning, gently massaging it in until fully absorbed. Use morning and night for optimal results, following up with your moisturizer and sunscreen during the day. For best results, consistently use the serum as part of your daily skincare routine, and be patient as niacinamide works to improve skin texture, tone, and appearance over time."
   },
-  {
-    "id": 7,
-    "background": "#c9d1e0",
-    "name": "Salicylic Acid Serum",
+   {
+    "id": 4,
+    "background": "#f4d5c8",
+    "name": "Glycolic Acid Serum",
     "category": ["skin care"],
     "subCategory": ["Serum"],
-    "image" : "https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/Salicylic-acid.png",
-    "price": 1200,
-    "shortDescription": "Exfoliates and close open pores",
-    "longDescription": "Our Salicylic Acid Serum is a potent exfoliant that helps to unclog pores, reduce acne, and improve skin texture. With its beta-hydroxy acid properties, salicylic acid gently penetrates deep into pores to dissolve dead skin cells, excess oil, and other debris that can cause breakouts. Regular use can lead to a clearer, more radiant complexion, with reduced appearance of blackheads, whiteheads, and fine lines. Perfect for acne-prone skin, this serum helps to refine skin tone and promote a smoother, healthier-looking complexion.",
-    "keyIngredients": "Salicylic acid 2%, Hyaluronic acid 2%",
-    "ingredients": "Salicylic acid, hyaluronic acid, carbomer, ethylene glycol, stabilizers, pH balancers, preservatives,aqua, ...etc",
-    "usage": "To use Salicylic Acid Serum, start by cleansing your face with a gentle cleanser. Then, apply 2-3 drops of serum to affected areas or your entire face, gently massaging it into your skin until absorbed. Begin with 1-2 times a week and gradually increase frequency as your skin becomes more tolerant. Don't forget to follow up with sunscreen (SPF 30 or higher) during the day, as salicylic acid can increase skin sensitivity to the sun. Always do a patch test first to ensure you don't have any sensitivity to the ingredients."
+    "image" : "https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/Glycolic-acid.png",
+    "price": 1500,
+    "shortDescription": "Exfoliates and Depigmentation",
+    "longDescription": "To use Dermatoes Naturals Glycolic Acid Serum, cleanse your face with a gentle cleanser, then apply a few drops of serum to your face, gently massaging it in until absorbed. Start with a low frequency (1-2 times a week) and gradually increase as your skin becomes more tolerant. Follow up with sunscreen (SPF 30 or higher) during the day, as glycolic acid can increase skin sensitivity to the sun. Always do a patch test first to ensure you don't have any sensitivity to the ingredients.",
+    "keyIngredients": "Glycolic acid 7%, Hyaluronic acid 2%",
+    "ingredients": "Glycolic acid, hyaluronic acid, dl Panthenol, carbomer, ethylene glycol, stabilizers, Preservatives,PH balancers,aqua,...etc",
+    "usage": "To use Dermatoes Naturals Glycolic Acid Serum, cleanse your face with a gentle cleanser, then apply a few drops of serum to your face, massaging it in until absorbed. Start with 1-2 times a week and gradually increase frequency as your skin becomes more tolerant. Don't forget to do a patch test first to ensure you don't have any sensitivity to the ingredients. During the day, be sure to use sunscreen with SPF 30 or higher."
   },
+
     {
     "id": 5,
     "background": "#d4e5ff",
@@ -87,22 +88,22 @@
     "ingredients": "Kojic Acid, Hyaluronic acid, allantoin, beta Arbutin, PEG, Stabilizers, PH Buffers, preservatives etc",
     "usage": "To use Dermatoes Naturals Kojic Acid 3% Serum, apply a few drops to affected areas or entire face after cleansing and toning. Gently massage the serum into the skin until fully absorbed. Use at night, as Kojic Acid can increase skin sensitivity to the sun. Follow up with a broad-spectrum sunscreen with at least SPF 30 in the morning. For best results, consistently use the serum as part of your daily skincare routine, and be patient as it may take several weeks to see noticeable improvements in skin brightness and tone."
   },
-  {
-    "id": 4,
-    "background": "#f4d5c8",
-    "name": "Glycolic Acid Serum",
+ 
+
+    {
+    "id": 7,
+    "background": "#c9d1e0",
+    "name": "Salicylic Acid Serum",
     "category": ["skin care"],
     "subCategory": ["Serum"],
-    "image" : "https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/Glycolic-acid.png",
-    "price": 1500,
-    "shortDescription": "Exfoliates and Depigmentation",
-    "longDescription": "To use Dermatoes Naturals Glycolic Acid Serum, cleanse your face with a gentle cleanser, then apply a few drops of serum to your face, gently massaging it in until absorbed. Start with a low frequency (1-2 times a week) and gradually increase as your skin becomes more tolerant. Follow up with sunscreen (SPF 30 or higher) during the day, as glycolic acid can increase skin sensitivity to the sun. Always do a patch test first to ensure you don't have any sensitivity to the ingredients.",
-    "keyIngredients": "Glycolic acid 7%, Hyaluronic acid 2%",
-    "ingredients": "Glycolic acid, hyaluronic acid, dl Panthenol, carbomer, ethylene glycol, stabilizers, Preservatives,PH balancers,aqua,...etc",
-    "usage": "To use Dermatoes Naturals Glycolic Acid Serum, cleanse your face with a gentle cleanser, then apply a few drops of serum to your face, massaging it in until absorbed. Start with 1-2 times a week and gradually increase frequency as your skin becomes more tolerant. Don't forget to do a patch test first to ensure you don't have any sensitivity to the ingredients. During the day, be sure to use sunscreen with SPF 30 or higher."
+    "image" : "https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/Salicylic-acid.png",
+    "price": 1200,
+    "shortDescription": "Exfoliates and close open pores",
+    "longDescription": "Our Salicylic Acid Serum is a potent exfoliant that helps to unclog pores, reduce acne, and improve skin texture. With its beta-hydroxy acid properties, salicylic acid gently penetrates deep into pores to dissolve dead skin cells, excess oil, and other debris that can cause breakouts. Regular use can lead to a clearer, more radiant complexion, with reduced appearance of blackheads, whiteheads, and fine lines. Perfect for acne-prone skin, this serum helps to refine skin tone and promote a smoother, healthier-looking complexion.",
+    "keyIngredients": "Salicylic acid 2%, Hyaluronic acid 2%",
+    "ingredients": "Salicylic acid, hyaluronic acid, carbomer, ethylene glycol, stabilizers, pH balancers, preservatives,aqua, ...etc",
+    "usage": "To use Salicylic Acid Serum, start by cleansing your face with a gentle cleanser. Then, apply 2-3 drops of serum to affected areas or your entire face, gently massaging it into your skin until absorbed. Begin with 1-2 times a week and gradually increase frequency as your skin becomes more tolerant. Don't forget to follow up with sunscreen (SPF 30 or higher) during the day, as salicylic acid can increase skin sensitivity to the sun. Always do a patch test first to ensure you don't have any sensitivity to the ingredients."
   },
-
-  
 
   {
     "id": 8,
