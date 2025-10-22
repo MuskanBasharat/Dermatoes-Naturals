@@ -103,23 +103,9 @@
   },
 
   
+
   {
     "id": 8,
-    "background": "#ebd9f3",
-    "name": "Hand Foot Cream",
-    "category": ["body care"],
-    "subCategory": ["Cream"],
-    "isSquare": true,
-    "image" : "https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/HandFoot.png",
-    "price": 550,
-    "shortDescription": "Nourishes and protects dry, rough skin",
-    "longDescription": "Dermatoes Naturals Hand and Foot Cream is a rich and nourishing formula that intensely moisturizes and softens dry, rough skin on hands and feet. Enriched with Allantoin and Aloe Vera extracts, this cream provides long-lasting hydration, soothes irritation, and helps to repair cracked skin. It leaves hands and feet feeling smooth, supple, and rejuvenated, making it perfect for daily use, especially during harsh weather conditions or for individuals with dry, sensitive skin.",
-    "keyIngredients": "Allantoin, Aloe Extracts",
-    "ingredients": " Allantoin, Aloe Extracts, PEG, Waxes, Cetostesryl Alcohol, myristic acid, aqua, preservatives, stabilizers, pH balancers, ...etc",
-    "usage": "To use Dermatoes Naturals Hand and Foot Cream, apply a generous amount to dry hands and feet, paying special attention to heels, cuticles, and any areas with rough or cracked skin. Massage the cream in thoroughly until fully absorbed. For best results, use daily, ideally after bathing or showering while skin is still slightly damp. Reapply as needed throughout the day to keep hands and feet soft, smooth, and hydrated."
-  },
-  {
-    "id": 9,
     "background": "#e6cccc",
     "name": "Brightening cream",
     "category": ["skin care"],
@@ -132,6 +118,21 @@
     "keyIngredients": "Glutathione  5%, Kojic Acid 1%,Niacinamide 5%,Vitamin B5 4%,Alpha Arbutin 3%",
     "ingredients" : "Glutathione, kojic acid, niacinamide, vitamin B5, Alpha Arbutin, emulsifying agents, stabilizers, preservatives, PH balancers ...etc",
     "usage": "To get the most out of Dermatoes Naturals Skin Brightening Cream, follow a consistent routine. Cleanse your face with a gentle cleanser, then apply a small amount of the cream to your face and neck, massaging it in until absorbed. Use it morning and night, and don't forget to follow up with a broad-spectrum sunscreen with at least SPF 30 during the day. Be patient and consistent for best results, and enjoy a brighter, more even-toned complexion."
+  },
+    {
+    "id": 9,
+    "background": "#ebd9f3",
+    "name": "Hand Foot Cream",
+    "category": ["body care"],
+    "subCategory": ["Cream"],
+    "isSquare": true,
+    "image" : "https://raw.githubusercontent.com/MuskanBasharat/DermatoesNaturals/refs/heads/main/images/HandFoot.png",
+    "price": 550,
+    "shortDescription": "Nourishes and protects dry, rough skin",
+    "longDescription": "Dermatoes Naturals Hand and Foot Cream is a rich and nourishing formula that intensely moisturizes and softens dry, rough skin on hands and feet. Enriched with Allantoin and Aloe Vera extracts, this cream provides long-lasting hydration, soothes irritation, and helps to repair cracked skin. It leaves hands and feet feeling smooth, supple, and rejuvenated, making it perfect for daily use, especially during harsh weather conditions or for individuals with dry, sensitive skin.",
+    "keyIngredients": "Allantoin, Aloe Extracts",
+    "ingredients": " Allantoin, Aloe Extracts, PEG, Waxes, Cetostesryl Alcohol, myristic acid, aqua, preservatives, stabilizers, pH balancers, ...etc",
+    "usage": "To use Dermatoes Naturals Hand and Foot Cream, apply a generous amount to dry hands and feet, paying special attention to heels, cuticles, and any areas with rough or cracked skin. Massage the cream in thoroughly until fully absorbed. For best results, use daily, ideally after bathing or showering while skin is still slightly damp. Reapply as needed throughout the day to keep hands and feet soft, smooth, and hydrated."
   },
   {
     "id": 10,
