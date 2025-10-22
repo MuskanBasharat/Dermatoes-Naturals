@@ -28,6 +28,10 @@ body {
   background-color: var(--background-color);
   line-height: 1.6;
 }
+#root{
+  max-width: 1550px;
+  margin: auto;
+}
 
 
 .container {
